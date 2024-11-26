@@ -620,6 +620,10 @@ input[type="checkbox"]{
         grid-row-start: 3;
         grid-row-end: 4;
     }
+    #bottom-section {
+        display: flex;
+        flex-direction: row;
+    }
 
     .grid {
         max-width: 100%;
@@ -648,7 +652,7 @@ input[type="checkbox"]{
         width: 100%;
     }
 
-    #list-header {
+    #list-header, #list-header-2 {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -699,15 +703,6 @@ input[type="checkbox"]{
         max-height: none;
     }
     
-    #kategorier-inner{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: start;
-        gap: 10px;
-        width: 100%;
-    }
     
     #kategorier-inner a{
         width: 200px;
@@ -718,14 +713,18 @@ input[type="checkbox"]{
     #anmelselser-tittel{
         padding: 0;
     }
-    #anmeldelser{
+    #anmeldelser div{
+        display: flex;
         flex-direction: row;
         overflow-x: auto;
-
+        max-width: 100%;
+    }
+    #anmeldelser div section{
+        width: 289px;
+        overflow-y: hidden;
     }
     
-    
-    #anmeldelser section img{
+    #anmeldelser div section img{
         border-radius: 50px;
         height: 100px;
         width: 100px;
@@ -753,7 +752,7 @@ input[type="checkbox"]{
     #levering,
     #betaling,
     #shopping-bag {
-        width: 70%;
+        width: 100%;
         border-style: solid;
         border-width: 1px;
         padding: 50px;
@@ -772,13 +771,17 @@ input[type="checkbox"]{
         align-items: flex-start;
     }
     
-    #dine-opplysninger form, 
-    #levering form,
+    #dine-opplysninger form,
     #betaling form{
         width: 100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap ;
+        flex-direction: column;
+    }
+    #levering form{
+        width: 100%;
+    }
+    #betaling form{
+        margin-bottom: 10px;
     }
 
     #dine-opplysninger form{
@@ -835,5 +838,14 @@ input[type="checkbox"]{
         content: "";
         display: block;
         height: 2rem;
+    }
+    #product-1, #product-2,#product-3,#product-4,#product-5,#product-6{
+        max-width: 350px;
+    }
+    #kategorier article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
