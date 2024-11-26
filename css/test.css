@@ -1,24 +1,38 @@
 /* header global */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 html{
     max-width: none;
-    width: 100vw;
+    width: 100%;
 }
 body {
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+    overflow-x: hidden !important;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    min-width: 0;
 }
 
+header, main, footer{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
 
 .grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
+    margin: 2rem 1rem;
     max-width: 1200px;
-    margin: 20px 20px;
 }
 
 header{
@@ -47,7 +61,7 @@ footer{
     flex-shrink: 1;
 }
 
-#list-header, #list-header-2 {
+#list-header {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -57,7 +71,7 @@ footer{
     margin: 20px 0px;
 }
 
-#list-header li, #list-header-2 li {
+#list-header li {
     font-size: small;
 }
 
@@ -73,7 +87,7 @@ footer{
     border-width: 1px;
     border-color: grey;
     width: 11rem;
-    height: 30px;
+    height: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,7 +124,6 @@ footer{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 10px;
 
 }
 #list-bottom-2, #list-bottom-1, #list-bottom-3 {
@@ -118,12 +131,11 @@ footer{
     display: flex;
     padding: 0;
 }
-
 #list-bottom-3{
-    gap: 10px;
+    gap: 4px;
 }
 
-#list-bottom-1 p, #list-bottom-2 p{
+#list-bottom-1 p{
     margin: 0;
 }
 
@@ -132,8 +144,7 @@ footer{
     flex-direction: column;
     gap: 1rem;
 }
-#list-bottom-1 li, #list-bottom-1 a,
-#list-bottom-2 li, #list-bottom-2 a{
+#list-bottom-1 li {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -141,12 +152,12 @@ footer{
     font-size: 12px;
 }
 
-#list-bottom-1 li p, #list-bottom-3 li p, #list-bottom-2 li p{
+#list-bottom-1 li p{
     font-weight: bold;
 }
 
-#footer h4{
-    margin: 10px 0;
+h4{
+    margin: 0;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -170,18 +181,18 @@ footer{
 
 }
 
-#text-bilder{
+#text-bilder-index{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     position: absolute;
-    width: 100%;
-    top: 430px;
-    max-width: 90%;
+    max-width: 60%;
+    right: 3rem;
+    top: 26rem;
     z-index: 1;
 }
-#text-bilder h1, #pp{
+#text-bilder-index h1, #pp{
     text-align: end;
 }
 
@@ -210,7 +221,7 @@ footer{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 80px 0;
+    margin-top: 3rem;
 }
 #items-outer{
     display: flex;
@@ -218,7 +229,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
     gap: 30px;
     margin-top: 2rem;
 }
@@ -252,35 +263,39 @@ footer{
     font-size: small;
      
 }
-#product-1, #product-2,#product-3,#product-4,#product-5,#product-6{
+#product {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
-    gap: 30px;
+    width: 20rem;
+    height: 30rem;
+    gap: 10px;
 }
-#product-1 img, #product-2 img,#product-3 img,#product-4 img,#product-5 img,#product-6 img {
+#product img {
     object-fit: cover;
-    width: 100%;
-    border-radius: 10px;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 20px;
 }
- #product-review1, #product-review2, #product-review3, #product-review4, #product-review5, #product-review6{
+#product-title{
+    justify-content: space-between;
+    width: 100%;
+}
+#product-title, #product-review{
     display: flex;
     flex-direction: row;
 }
 
-#items-outer p{
+#product-title p{
     padding: 0 5px;
 }
 
-#product-title1, #product-title2, #product-title3, #product-title4, #product-title5, #product-review1 ol, #product-review2 ol, #product-review3 ol, #product-review4 ol, #product-review5 ol, #product-review6 ol{
+#product-title, #product-review ol{
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 2px;
     padding: 0;
-    justify-content: space-between;
-    width: 100%;
 }
 
 #kategorier {
@@ -288,38 +303,10 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin: 30px 0;
 }
-#kategorier-container1, #kategorier-container2, #kategorier-container3, #kategorier-container4, #kategorier-container5 {
-    position: relative;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    z-index: 0;
-}
-
-#kategorier-container1 p, #kategorier-container2 p, #kategorier-container3 p, #kategorier-container4 p, #kategorier-container5 p{
-    position: absolute;
-    top: 45%;
-    left: 34%;
-    z-index: 3;
-    font-weight: 800;
-    font-size: large;
-}
-
-#kategorier figure, #kategorier-s{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-#kategorier img {
-    width: 100%;
+#bilde-kat1 {
+    background-color: rgba(0, 0, 0, 0.747);
     opacity: 0.5;
-    background: rgb(0, 0, 0);
 }
 #anmeldelser{
     display: flex;
@@ -330,17 +317,17 @@ footer{
 }
 
 #anmeldelser p{
-    max-width: 100%;
+    max-width: 70%;
 }
 
-#anmeldelser section{
+#anmeldelse{
     display: flex;
     flex-direction: column;
     align-items: start;
     padding: 10px;
 }
 
-#anmeldelser section img{
+#anmeldelse img{
     width: 190px;
     height: 190px;
     margin: 10px;
@@ -348,7 +335,7 @@ footer{
     border-radius: 10px;
 }
 
-#anmeldelser section ol{
+#anmeldelse ol{
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -365,8 +352,7 @@ a{
 #anmelselser-tittel{
     width: 100%;
     text-align: start;
-    padding: auto;
-    margin-left: 20px;
+    padding-left:10rem;
 }
 
 
@@ -393,122 +379,49 @@ a{
     color: rgba(0, 0, 0, 0.608) !important;
 }
 
+#nav-products ol{
+    color: rgba(0, 0, 0, 0.608) !important;
+}
 
 #produkt-bilde, #lignende-produkter{
-    max-width: 100%;
+    max-width: 90%;
     background-color: transparent;
-    margin: 20px 0;
 }
-
-#produkt-bilde img{
+#produkt-bilde img, #lignende-produkter img{
     object-fit: cover;
+    border-radius: 15px;
     width: 100%;
-    margin: 10px 0;
 }
-
-#lignende-produkter img {
-    width: 95%;
-}
-
-#lignende-produkter article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    gap: 30px;
-}
-
 #produkt-info{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-#lignende-produkter figure section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-    padding-bottom: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* body checkout*/
-
-#kasse-h1{
-
-}
 #shopping-bag {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
-#shopping-bag h3, #produktbeskrivelse h3, #levering h3, #betaling h3{
-    font-size: 25px;
-    font-weight: 750;
-    width: 100%;
-    margin: 20px 0;
-}
-#levering p, #betaling p{
-    margin: 15px 0 !important;
-}
-#betal p {
-    font-weight: 400 !important;
-}
 
-#shopping-bag section{
+#product-cart{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-#shopping-bag section img {
-    width: 100%;
+#product-cart img {
+    width: 95%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    margin: 20px 0;
 }
 
 #produktbeskrivelse{
     width: 100%;
-}
-
-#produktbeskrivelse p {
-    padding: 5px 0;
 }
 
 #dine-opplysninger, 
@@ -518,7 +431,6 @@ a{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 30px 0;
 }
 
 #dine-opplysninger p{
@@ -534,13 +446,8 @@ a{
 
 #dine-opplysninger form, 
 #levering form,
-#betaling form,
-#input-field form{
-    min-width: 100%;
-}
-
-#input-field input{
-    margin: 5px 0 0 0;
+#betaling form{
+    width: 100%;
 }
 
 input[type=text], input[type=number], input[type=date]{
@@ -548,35 +455,38 @@ input[type=text], input[type=number], input[type=date]{
     height: 3rem;
 }
 
-#input-field form input[type=text]{
-    padding: 20px;
-}
-
-input[type=submit], button {
+input[type=submit]{
     width: 5rem;
     height: 3rem;
     border-radius: 0;
     border-color: grey;
     background-color: rgb(46, 46, 46);
     color: white;
-    margin: 30px 0px !important;
 }
 
 #levering form label, #levering p {
-    padding: 10px 0;
     font-weight: 600;
 }
-
 
 input[type="checkbox"]{
     border-radius: 10px;
 }
 
-#bekreft{
-    margin-bottom: 1rem !important;
+#betaling p {
+    margin: 5px 0;
+    font-weight: 600;
 }
-#bekreft p {
-    font-weight: 500;
+
+#kredittinformasjon{
+    margin-bottom: 2rem;
+}
+
+#a-betale, #bekreftelse{
+    font-weight: 400 !important;
+    margin-top: 2rem !important;
+}
+#bekreftelse{
+    margin-bottom: 1rem !important;
 }
 #nyhetsbrev label{
     font-size: 15px;
@@ -725,7 +635,7 @@ input[type="checkbox"]{
     }
     
     
-    #anmeldelser section img{
+    #anmeldelse img{
         border-radius: 50px;
         height: 100px;
         width: 100px;

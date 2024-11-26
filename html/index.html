@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,53 +11,47 @@
     <div class="grid">
         <header>
             <nav id="nav-header">
-                <div id="search-div">
+                <nav id="search-div">
                     <input id="search-input" type="text" placeholder="Søk her..">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </nav>
                 <ol id="list-header">
                     <li>
-                        Hjem
+                       <a href="index.html">Hjem</a>
                     </li>
                     <li>
-                        Produkter
+                        <a href="product.html">Produkter</a>
                     </li>
                     <li>
-                        <h1>Logo</h1>
+                        <a href="index.html"><h1>Logo</h1></a>
                     </li>
                     <li>
-                        Kategorier
+                        <a href="index.html#kategorier">Kategorier</a>
                     </li>
                     <li>
-                        Kontakt oss
+                        <a href="index.html#footer">Kontakt oss</a>
                     </li>
                 </ol>
-                <ol id="list-header">
-                    <li>
-                        <i class="fa-regular fa-user"></i>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-heart"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </li>
+                <ol id="list-header-2">
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
                 </ol>
             </nav>
         </header>
-        <main>
-            <section id="text-bilder-index">
+        <main>  
+            <figure id="scroll-container">
+                <img src="https://picsum.photos/id/106/600/500" alt="bilde1">
+                <img src="https://picsum.photos/id/40/600/500" alt="bilde1">
+                <img src="https://picsum.photos/id/75/600/500" alt="bilde1">
+                <img src="https://picsum.photos/id/493/600/500" alt="bilde1">
+            </figure>
+            <aside id="text-bilder">
                 <h1>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h1>
                 <p id="pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p id="lesmer">LES MER</p>
-            </section>
-            <section id="scroll-container">
-                <img src="https://picsum.photos/id/106/600/400" alt="bilde1">
-                <img src="https://picsum.photos/id/40/600/400" alt="bilde1">
-                <img src="https://picsum.photos/id/75/600/400" alt="bilde1">
-                <img src="https://picsum.photos/id/493/600/400" alt="bilde1">
-            </section>
-            <section id="populære-main">
+            </aside>
+            <article id="populære-main">
                 <section id="text-pop-items">
                     <h2>Våre mest populære produkter</h2>
                     <p>Oppdag det beste av det beste</p>
@@ -67,14 +61,14 @@
                     <a href="index.html" class="button">Special Price</a>
                     <a href="index.html" class="button">Best Sellers</a>
                 </div>
-                <section id="items-outer">
-                    <section id="product">
-                        <img src="https://picsum.photos/id/2/200/300" alt="bilde-prod">
-                        <section id="product-title">
-                            <p>Product name</p>
+                <article id="items-outer">
+                    <figure id="product-1">
+                        <img src="https://picsum.photos/id/360/500" alt="bilde-prod">
+                        <section id="product-title1">
+                            <h4>Product name</h4>
                             <p>Kr 1999</p>
                         </section>
-                        <section id="product-review">
+                        <figure id="product-review1">
                             <ol>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -83,15 +77,15 @@
                                 <li><i class="fa-regular fa-star"></i></li>
                                 <li>824 Reviews</li>
                             </ol> 
-                        </section>
-                    </section>
-                    <section id="product">
-                        <img src="https://picsum.photos/id/2/200/300" alt="bilde-prod">
-                        <section id="product-title">
-                            <p>Product name</p>
+                        </figure>
+                    </figure>
+                    <figure id="product-2">
+                        <img src="https://picsum.photos/id/29/500" alt="bilde-prod">
+                        <section id="product-title2">
+                            <h4>Product name</h4>
                             <p>Kr 1999</p>
                         </section>
-                        <section id="product-review">
+                        <figure id="product-review2">
                             <ol>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -100,15 +94,15 @@
                                 <li><i class="fa-regular fa-star"></i></li>
                                 <li>824 Reviews</li>
                             </ol> 
-                        </section>
-                    </section>
-                    <section id="product">
-                        <img src="https://picsum.photos/id/2/200/300" alt="bilde-prod">
-                        <section id="product-title">
-                            <p>Product name</p>
+                        </figure>
+                    </figure>
+                    <figure id="product-3">
+                        <img src="https://picsum.photos/id/362/500" alt="bilde-prod">
+                        <section id="product-title3">
+                            <h4>Product name</h4>
                             <p>Kr 1999</p>
                         </section>
-                        <section id="product-review">
+                        <figure id="product-review3">
                             <ol>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -117,15 +111,15 @@
                                 <li><i class="fa-regular fa-star"></i></li>
                                 <li>824 Reviews</li>
                             </ol> 
-                        </section>
-                    </section>
-                    <section id="product">
-                        <img src="https://picsum.photos/id/2/200/300" alt="bilde-prod">
-                        <section id="product-title">
-                            <p>Product name</p>
+                        </figure>
+                    </figure>
+                    <figure id="product-4">
+                        <img src="https://picsum.photos/id/60/500" alt="bilde-prod">
+                        <section id="product-title4">
+                            <h4>Product name</h4>
                             <p>Kr 1999</p>
                         </section>
-                        <section id="product-review">
+                        <figure id="product-review4">
                             <ol>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -134,15 +128,15 @@
                                 <li><i class="fa-regular fa-star"></i></li>
                                 <li>824 Reviews</li>
                             </ol> 
-                        </section>
-                    </section>
-                    <section id="product">
-                        <img src="https://picsum.photos/id/2/200/300" alt="bilde-prod">
-                        <section id="product-title">
-                            <p>Product name</p>
+                        </figure>
+                    </figure>
+                    <figure id="product-5">
+                        <img src="https://picsum.photos/id/111/500" alt="bilde-prod">
+                        <section id="product-title5">
+                            <h4>Product name</h4>
                             <p>Kr 1999</p>
                         </section>
-                        <section id="product-review">
+                        <figure id="product-review5">
                             <ol>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -151,15 +145,15 @@
                                 <li><i class="fa-regular fa-star"></i></li>
                                 <li>824 Reviews</li>
                             </ol> 
-                        </section>
-                    </section>
-                    <section id="product">
-                        <img src="https://picsum.photos/id/2/200/300" alt="bilde-prod">
-                        <section id="product-title">
-                            <p>Product name</p>
+                        </figure>
+                    </figure>
+                    <figure id="product-6">
+                        <img src="https://picsum.photos/id/143/500" alt="bilde-prod">
+                        <section id="product-title6">
+                            <h4>Product name</h4>
                             <p>Kr 1999</p>
                         </section>
-                        <section id="product-review">
+                        <figure id="product-review6">
                             <ol>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -168,28 +162,79 @@
                                 <li><i class="fa-regular fa-star"></i></li>
                                 <li>824 Reviews</li>
                             </ol> 
-                        </section>
-                    </section>
-                </section>
-            </section>
+                        </figure>
+                    </figure>
+                </article>
+            </article>
             <section id="kategorier">
-                <div>
+                <section id="kategorier-s">
                     <h2>Våre mest populære kategorier</h2>
                     <p>Oppdag det beste av det beste</p>
-                </div>
-                <section>
-                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-kat1">
-                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-kat2">
-                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-kat3">
-                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-kat4">
-                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-kat5">
                 </section>
+                <article>
+                    <section id="kategorier-container1">
+                        <img src="https://picsum.photos/id/306/300/300" alt="bilde-kat1">
+                        <p>Category 1</p>
+                    </section> 
+                    <section id="kategorier-container2">
+                        <img src="https://picsum.photos/id/306/300/300" alt="bilde-kat2">
+                        <p>Category 2</p> 
+                    </section>
+                    <section id="kategorier-container3">
+                        <img src="https://picsum.photos/id/306/300/300" alt="bilde-kat2">
+                        <p>Category 3</p>
+                    </section>
+                    <section id="kategorier-container4">
+                        <img src="https://picsum.photos/id/306/300/300" alt="bilde-kat4">
+                        <p>Category 4</p> 
+                    </section>
+                    <section id="kategorier-container5">
+                        <img src="https://picsum.photos/id/306/300/300" alt="bilde-kat5">
+                        <p>Category 5</p>
+                    </section>
+                </article>
             </section>
-            <h3 id="anmelselser-tittel"><b>Anmeldelser</b></h3>
             <section id="anmeldelser">
-                <section id="anmeldelse">
+                <h3 id="anmelselser-tittel"><b>Anmeldelser</b></h3>
+                <section>
                     <img src="https://picsum.photos/id/2/200/300" alt="bilde-anm">
-                    <p>Rober Labrador</p>
+                    <h4>Rober Labrador</h4>
+                    <ol>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ol>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+                </section>
+                <section>
+                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-anm">
+                    <h4>Rober Labrador</h4>
+                    <ol>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ol>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+                </section>
+                <section>
+                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-anm">
+                    <h4>Rober Labrador</h4>
+                    <ol>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ol>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+                </section>
+                <section>
+                    <img src="https://picsum.photos/id/2/200/300" alt="bilde-anm">
+                    <h4>Rober Labrador</h4>
                     <ol>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
@@ -218,11 +263,10 @@
                 </section>
                 <section id="section-bottom-2">
                     <h4>Snarveier</h4>
-                    <ol id="list-bottom-1">
-                        <li>Adresse</li>
-                        <li>Telefon</li>
-                        <li>E-post:</li>
-                        
+                    <ol id="list-bottom-2">
+                        <li><a href="product.html">Produkter</a></li>
+                        <li><a href="index.html#kategorier">Kategorier</a></li>
+                        <li>Kontakt oss</li>
                     </ol>
                 </section>
                 <section id="section-bottom-3">
